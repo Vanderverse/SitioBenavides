@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle" rel="stylesheet">
+    <title>Vander Web</title>
+</head>
+<body>
+	<!--contenedor padre-->
+	<div class="gridContainer">
+		<!--header-->
+    <header class="gridContainerHeader">
+		<!--logo-->
+		<picture class="gridContainerImg">
+			<img src="/img/logo1.png" alt="LOGO">
+		</picture>
+		<!--fin logo-->
+		<!--menu-->
+		<div class="menu">
+			<ul>
+				<li><a href="../index.html">Inicio</a>
+					<li><a href="../vistas/noticias.html">Noticias</a></li>
+					<li><a href="../vistas/ciencia.html">Ciencia</a></li>
+					<li><a href="../vistas/tecno.html">Tecnologia</a></li>
+					<li><a href="../vistas/contact.html">Contacto</a></li>
+			</ul>
+		</div>
+		<!--fin menu-->
+	</header>
+	<!--fin header-->
+    </div>
+    <div class="gridForm">
+    <form class="formulario" action="" method="" enctype="">
+        <h1>Formulario de contacto</h1>
+        <label for="usersex">SEXO:</label>
+        <input type="radio" name="campoUserSex" id="usersex" value="masculino" required>Hombre
+        <input type="radio" name="campoUserSex" id="usersex" value="femenino" required>Mujer
+        <div>
+            <input type="text" name="" placeholder="Nombre" required>
+        </div>
+        <div>
+            <input type="email" name="" placeholder="nombre@mail.com" required>
+        </div>
+        <div>
+            <input type="password" name="" placeholder="contraseña" required><br>
+        </div>
+    <div>
+            <textarea name="Formulario" placeholder="Dejanos tu mensaje" id="" cols="30" rows="10" required></textarea>
+        <div>
+            <label for="conditions">Terminos y Condiciones</label>
+            <input type="checkbox" name="campoconditions" id="" required>
+        </div>
+        <h4>Suscribirse al Newsletter?</h4>
+            <select name="Newsletter" required>
+                <option value="" disabled selected>Seleciona una opcion</option>
+                <option value="yes">Si</option>
+                <option value="no">No</option>
+          </select>
+    </div> 
+    <div>     
+        <div class="button">    
+            <button type="submit" value="Enviar" required><span>Enviar</span></button> 
+            <button type="reset" value="Limpiar"><span>Limpiar</span></button> 
+        </div>
+    </div>  
+    </form>
+    </div>
+    <div class="gridFooter">
+    <footer class="footer">
+		<div class=rrss>
+            <a href="#"><img src="../img/fb.png" alt="FB" width="40" height="35"></a>
+            <a href="#"><img src="../img/ig.png" alt="IG" width="40" height="35"></a>
+        </div>
+			<a href="./contact.html">CONTACTO</a>
+			<a href="../index.html" class="inicio">Ir al inicio</a>
+	</footer>
+	</div>
+</body>
+</html>
