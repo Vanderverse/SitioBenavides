@@ -330,6 +330,10 @@ picture img{
   .gridContainer{
     grid-template-rows: 100px 50px;
   }
+
+  form{
+    padding-top: 50px
+  }
   
   .gridSectionImg{
     width: 100%;
