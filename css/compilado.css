@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+.articulo__texto {
+  font-size: 1rem; }
+
+.articulo__titulo {
+  font-size: 1.4rem; }
+
+.menuinicio a {
+  color: white; }
+
 body {
   background-color: #D8E3E7; }
 
@@ -75,7 +84,7 @@ picture img {
   left: 0;
   right: 0;
   z-index: 300;
-  background: #000000;
+  background: black;
   min-height: 45px;
   font-size: 1rem;
   list-style: none; }
@@ -97,18 +106,22 @@ picture img {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem; }
 
-.menu {
+.menu, .menu--modificado {
   display: flex;
-  background: #000000;
+  background: black;
   min-height: 45px;
   list-style: none;
   flex-direction: column; }
 
-.menu a {
+.menu--modificado {
+  font-size: 1rem;
+  background-color: lightslategrey; }
+
+.menu a, .menu--modificado a {
   text-decoration: none;
   color: whitesmoke; }
 
-.menu ul {
+.menu ul, .menu--modificado ul {
   display: flex;
   flex-direction: row;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -116,7 +129,7 @@ picture img {
   list-style: none;
   justify-content: space-evenly; }
 
-.menu ul li {
+.menu ul li, .menu--modificado ul li {
   padding-left: 0rem; }
 
 a:hover {
@@ -124,7 +137,7 @@ a:hover {
   transition: all 0.5s; }
 
 .boton {
-  background: #000000;
+  background: black;
   color: #ffff;
   padding: 1rem 1.5rem;
   text-decoration: none;
@@ -145,8 +158,6 @@ a:hover {
     overflow: hidden;
     background: #f3c93f;
     color: black; }
-  .boton .button button:hover {
-    background-color: #C06014; }
 
 .btn {
   margin-bottom: 1.3rem;
@@ -176,7 +187,7 @@ a:hover {
   .site-footer a {
     color: #737373; }
   .site-footer a:hover {
-    color: #3366cc;
+    color: #ffffff;
     text-decoration: none; }
 
 .gridContainer {
@@ -336,9 +347,9 @@ a:hover {
   .menuinicio ul li {
     font-size: .6rem;
     padding: 5px; }
-  .menu {
+  .menu, .menu--modificado {
     font-size: .5rem; }
-    .menu ul {
+    .menu ul, .menu--modificado ul {
       display: flex;
       font-size: 1rem;
       flex-direction: row;
@@ -346,7 +357,7 @@ a:hover {
       list-style: none;
       justify-content: space-evenly;
       flex-wrap: nowrap; }
-    .menu ul li {
+    .menu ul li, .menu--modificado ul li {
       padding: 5px; }
   .rrss ul {
     transform: translate(-142%, -50%); }
@@ -363,9 +374,9 @@ a:hover {
 @media screen and (max-width: 320px) {
   .nav-link {
     padding: 0.2rem 0.7rem; }
-  .menu {
+  .menu, .menu--modificado {
     justify-content: center; }
-    .menu ul {
+    .menu ul, .menu--modificado ul {
       display: flex;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 0.6rem;
