@@ -20,10 +20,6 @@ header {
   align-items: center;
   justify-content: space-between; }
 
-picture img {
-  width: auto;
-  max-height: 100px; }
-
 .section {
   background-color: #424642;
   width: 100%; }
@@ -115,7 +111,7 @@ picture img {
 
 .menu--modificado {
   font-size: 1rem;
-  background-color: lightslategrey; }
+  background-color: black; }
 
 .menu a, .menu--modificado a {
   text-decoration: none;
@@ -165,16 +161,29 @@ a:hover {
 
 .btn-primary {
   background-color: #2b2f35;
-  border-color: #17253a; }
+  border-color: #17253a;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem; }
+
+.btn-primary:hover {
+  background-color: #b8b2b1;
+  color: black;
+  border-radius: 5px;
+  transform: translateY(2px);
+  border-color: black; }
 
 .site-footer {
   background-color: #000c3a;
   padding: 45px 0 20px;
   font-size: 1rem;
   line-height: 24px;
-  color: #737373; }
+  color: #ffffff;
+  border-bottom-width: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  padding-top: 42px; }
   .site-footer hr {
-    border-top-color: #bbb;
+    border-top-color: white;
     opacity: 0.5; }
   .site-footer hr.small {
     margin: 20px 0; }
@@ -185,7 +194,7 @@ a:hover {
     margin-top: 5px;
     letter-spacing: 2px; }
   .site-footer a {
-    color: #737373; }
+    color: #ffffff; }
   .site-footer a:hover {
     color: #ffffff;
     text-decoration: none; }
@@ -201,6 +210,9 @@ a:hover {
   display: flex;
   justify-content: center; }
 
+.gridContainerImg img {
+  width: auto; }
+
 .gridForm {
   display: grid; }
 
@@ -210,10 +222,10 @@ a:hover {
   .footer-links li {
     display: block; }
   .footer-links a {
-    color: #737373;
+    color: #ffffff;
     text-decoration: none; }
   .footer-links a:active, .footer-links .footer-links a:focus, .footer-links .footer-links a:hover {
-    color: #3366cc;
+    color: #000000;
     text-decoration: none; }
   .footer-links .footer-links.inline li {
     display: inline-block; }
@@ -277,7 +289,7 @@ a:hover {
 .formulario {
   margin: 0 auto;
   text-align: center;
-  font-family: 'Dongle', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
   font-size: .9rem;
   background: #c8c9c2a8;
   border-radius: 62px 17px 62px 17px;
@@ -287,13 +299,21 @@ a:hover {
   margin-top: 35px; }
   .formulario .formulario h1 {
     text-align: center;
-    font-family: 'Dongle', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
     font-size: 1.3rem; }
+
+.form-control {
+  padding: 2px;
+  border-bottom-width: 2px; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1040px) {
   .rrss ul {
-    transform: translate(0%, -70%); } }
+    transform: translate(0%, -70%); }
+  .gridContainerImg img {
+    margin: 0 auto;
+    width: 30%;
+    padding: 1.2rem; } }
 
 @media screen and (max-width: 768px) {
   nav .navegacion {
@@ -305,6 +325,10 @@ a:hover {
     height: 30px;
     font-size: 1rem;
     line-height: 28px; }
+  .gridContainerImg img {
+    margin: 0 auto;
+    width: 35%;
+    padding: 1.2rem; }
   .menuinicio ul li {
     font-size: .9rem;
     padding: 5px; }
@@ -325,6 +349,10 @@ a:hover {
 @media screen and (max-width: 425px) {
   nav .navegacion {
     flex-direction: column; }
+  .gridContainerImg img {
+    margin: 0 auto;
+    width: 45%;
+    padding: 1.2rem; }
   .nav-link {
     display: block;
     padding: 0rem 0rem;
@@ -369,7 +397,11 @@ a:hover {
 
 @media screen and (max-width: 375px) {
   .rrss ul {
-    transform: translate(-130%, -50%); } }
+    transform: translate(-130%, -50%); }
+  .gridContainerImg img {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.2rem; } }
 
 @media screen and (max-width: 320px) {
   .nav-link {
@@ -388,6 +420,10 @@ a:hover {
       font-size: .8rem; }
   .gridContainer {
     grid-template-rows: 100px 50px; }
+  .gridContainerImg img {
+    margin: 0 auto;
+    width: 55%;
+    padding: 1.2rem; }
   form {
     padding-top: 50px; }
   .rrss ul {
