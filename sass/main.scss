@@ -34,7 +34,7 @@
    
     
   body{
-      background-color: #D8E3E7;
+      background-color: #ffffff;
   }
 
 header {
@@ -75,6 +75,28 @@ header {
       min-width: 100%;
       min-height: 100%;
     }
+  }
+
+  .articulo{
+    display: grid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    justify-items: center;
+    color: black;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .articulo p{
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+  }
+
+  .articulo__Main{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   
@@ -122,7 +144,7 @@ header {
   
   .menuinicio a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
   }
 
   .menuinicio ul{
@@ -137,7 +159,7 @@ header {
   
   .menuinicio ul li{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
   }
   
   .menu {
@@ -172,7 +194,7 @@ header {
   
   
   a:hover {
-    background-color: rgb(184, 178, 177);
+    background-color: #212529;
     transition: all 0.5s;
  
   }
@@ -277,6 +299,11 @@ header {
 
   .gridContainerImg img{
     width: auto;
+  }
+
+  .gridContainerImg a{
+    display: flex;
+    margin: 0px;
   }
   
   
@@ -414,6 +441,10 @@ header {
     width: 30%;
     padding: 1.2rem;
   }
+  .articulo{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -468,6 +499,10 @@ header {
     display:block;
     margin-right:0;
     font-weight:600
+  }
+  .articulo{
+    padding-left: 1px;
+    padding-right: 1px;
   }
 }
 @media screen and (max-width: 425px){
@@ -529,6 +564,10 @@ header {
     & ul li {
       padding: 5px;
    }
+   .articulo{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
 
 
@@ -554,6 +593,10 @@ header {
     width: 50%;
     padding: 1.2rem;
   }
+  .articulo{
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 
 }
 
@@ -575,6 +618,11 @@ header {
     list-style: none;
     flex-wrap: nowrap;
   }
+}
+
+.articulo{
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 

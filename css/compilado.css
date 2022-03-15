@@ -13,7 +13,7 @@
   color: white; }
 
 body {
-  background-color: #D8E3E7; }
+  background-color: #ffffff; }
 
 header {
   background: #212529;
@@ -48,6 +48,24 @@ header {
   .header-video .header-video video {
     min-width: 100%;
     min-height: 100%; }
+
+.articulo {
+  display: grid;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  justify-items: center;
+  color: black;
+  padding-left: 150px;
+  padding-right: 150px; }
+
+.articulo p {
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%; }
+
+.articulo__Main {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .header-overlay {
   height: 100vh;
@@ -87,7 +105,7 @@ header {
 
 .menuinicio a {
   text-decoration: none;
-  color: whitesmoke; }
+  color: white; }
 
 .menuinicio ul {
   display: flex;
@@ -129,7 +147,7 @@ header {
   padding-left: 0rem; }
 
 a:hover {
-  background-color: #b8b2b1;
+  background-color: #212529;
   transition: all 0.5s; }
 
 .boton {
@@ -212,6 +230,10 @@ a:hover {
 
 .gridContainerImg img {
   width: auto; }
+
+.gridContainerImg a {
+  display: flex;
+  margin: 0px; }
 
 .gridForm {
   display: grid; }
@@ -313,7 +335,10 @@ a:hover {
   .gridContainerImg img {
     margin: 0 auto;
     width: 30%;
-    padding: 1.2rem; } }
+    padding: 1.2rem; }
+  .articulo {
+    padding-left: 1px;
+    padding-right: 1px; } }
 
 @media screen and (max-width: 768px) {
   nav .navegacion {
@@ -344,7 +369,10 @@ a:hover {
   .social-icons li.title {
     display: block;
     margin-right: 0;
-    font-weight: 600; } }
+    font-weight: 600; }
+  .articulo {
+    padding-left: 1px;
+    padding-right: 1px; } }
 
 @media screen and (max-width: 425px) {
   nav .navegacion {
@@ -387,6 +415,9 @@ a:hover {
       flex-wrap: nowrap; }
     .menu ul li, .menu--modificado ul li {
       padding: 5px; }
+    .menu .articulo, .menu--modificado .articulo {
+      padding-left: 1px;
+      padding-right: 1px; }
   .rrss ul {
     transform: translate(-142%, -50%); }
   .rrss ul li a {
@@ -401,7 +432,10 @@ a:hover {
   .gridContainerImg img {
     margin: 0 auto;
     width: 50%;
-    padding: 1.2rem; } }
+    padding: 1.2rem; }
+  .articulo {
+    padding-left: 1px;
+    padding-right: 1px; } }
 
 @media screen and (max-width: 320px) {
   .nav-link {
@@ -414,6 +448,9 @@ a:hover {
       font-size: 0.6rem;
       list-style: none;
       flex-wrap: nowrap; }
+  .articulo {
+    padding-left: 1px;
+    padding-right: 1px; }
   .formulario {
     width: auto; }
     .formulario h1 {
